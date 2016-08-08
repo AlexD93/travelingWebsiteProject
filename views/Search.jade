@@ -1,0 +1,66 @@
+link(rel='stylesheet', href='/stylesheets/search.css')
+
+html
+  body
+    link(rel='stylesheet', href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css')
+    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    script(src='//code.jquery.com/ui/1.12.0/jquery-ui.js')
+    script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    script(src='//maps.googleapis.com/maps/api/js?key=AIzaSyAulybRkAQQ3DLMw-Hn95u98RMF72qLU4g&libraries=geometry,places&language=en-US')
+    script(src='/javascripts/jQueryForDatePicker.js')
+    script(src='/javascripts/search.js')
+
+    br
+    br
+    //img(src='/stylesheets/images/ballon.png', alt='ballon', id='logo')
+    
+
+    div.container
+        div.row
+            div.filter.highlight.col-lg-4
+                form(name='filters', role='form')
+                    div.fieldset
+                        fieldset
+                            div.form-group
+                                label(for="location") Select airport location
+                                select(id="location", class='form-control', name='location')
+                                    //option(value="")
+                                    option(value="BOS") Boston, Massachusets
+                                    option(value="YYZ") Toronto, Canada
+                                    option(value="IEV") Kiev, Ukraine
+                                    option(value="CGH") Sao Paulo, Brazil - Congonhas
+                                    option(value="GMP") Seoul, South Korea
+                                    option(value="DEL") Delhi, India
+
+                            div.form-group
+                                label(for="check-in") Check in date
+                                input(id="check-in", class='datepick form-control', name='check_in', type='text', placeholder='Pick up your date', required)
+
+                            div.form-group
+                                label(for="check-out") Check out date
+                                input(id="check-out", class='datepick form-control', name='check_out', type='text', placeholder='Pick up your date',  required)
+
+                            div.form-group
+                                label(for="radius") Radius in kilomoters
+                                input(id="radius", class='form-control', name='radius', type='number', min="1", max="50", placeholder='Radius around the center to look for hotels in kilometers (km).')
+                            
+                            div(id="not-found", class="alert alert-danger hide", role="alert")
+                                strong Nothing found
+
+                            div.form-group
+                                input(class='btn btn-default pull-right', name='submit', type='submit', placeholder='Search')
+
+            div.map-container.col-lg-8
+                div#g-map
+
+
+
+
+
+
+-//
+//- div.form-group
+//- label(for="rooms") Rooms
+//- input(id="rooms", class='form-control', name='rooms', type='checkbox', value="false")

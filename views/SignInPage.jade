@@ -1,0 +1,19 @@
+//extends layout
+link(rel='stylesheet', href='/stylesheets/styleSignInPage.css')
+
+block content
+    html
+        body
+            
+            div.form
+
+                img(src='/stylesheets/images/ballon.png', alt='ballon', id='logo')
+                form(action="/SignInPage" method="post")     
+                    div.field_login
+                            input(type="text" name="EmailAddress" placeholder='Email address' id="email_address_field")
+
+                    div.field_login 
+                            input(type="text" name="Password" placeholder='Password' id="password_field")
+
+                    
+                    input(class="button_login" type="submit", name="LogIn", value="SignIn")

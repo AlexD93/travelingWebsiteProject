@@ -1,0 +1,59 @@
+
+block content
+    html
+        body
+            head
+                link(rel='stylesheet', href='/stylesheets/style.css')
+                link(rel='stylesheet', href='/stylesheets/animate.css')
+        div.menu
+            ul 
+                li
+                    img(src='/stylesheets/images/ballon.png', alt='ballon', id="logo")
+                li
+                    a#slogan Alsa traveling
+                li(id='li3')
+                    input(id="button3" type='button', value='Wishlist', onclick="window.location.href='/WishList'")
+                li(id='li1')
+                    input(id="button2" type='button', value='Sign In', onclick="window.location.href='/SignInPage'")
+                li(id='li2')
+                    input(class="button1 animated shake", id="button1" type='button', value='Sign Up', onclick="window.location.href='/SignUpPage'")
+                li(id='li4')
+                    input(class="button1", id="button1" type='button', value='Hotel Airport Search', onclick="window.location.href='/Search'")
+        
+        
+            //img(src='/stylesheets/images/desert.jpg', alt='ballon', id='rrt')
+
+            div.form
+                form(id='search_form',action="/" method="post")
+                    input(id='search_bar', type='text', name='Search', placeholder='Where would you like to go with us today?')
+                //input(id='search_button', type='submit', value='Search')
+        .news
+            div.picture1
+                img(src='/stylesheets/images/new_desert.jpg', alt='new_desert', id='new_desert')
+                p.type EXPLORE  THE LAST HAVENS ON THE PLANET
+                p.place The Sahara, Africa
+            div.picture2
+                img(src='/stylesheets/images/newyourk.jpg', alt='newyourk', id='newyourk')
+                p.type TAKE A HUGE BITE OUT OF THE BIG APPLE
+                p.place New York City, USA
+            div.picture3
+                img(src='/stylesheets/images/cook.png', alt='cook', id='cook')
+                p.type LEARN TO COOK IN FRANCE
+                p.place Paris, France
+            div.picture4
+                img(src='/stylesheets/images/resort.jpg', alt='resort', id='resort')
+                p.type DETOX & REJUVENATE IN THAI LUXURY
+                p.place Ko Pha Ngan, Thailand
+            div.picture5
+                img(src='/stylesheets/images/bike.jpg', alt='bike', id='bike')
+                p.type CYCLE THROUGH THE ROCKY MOUNTAINS
+                p.place Denver, USA
+            div.picture6
+                img(src='/stylesheets/images/diving.jpg', alt='diving', id='diving')
+                p.type SWIM & DIVEWITH TIGER SHARKS
+                p.place Bahamas, Caribbean
+
+
+
+
+

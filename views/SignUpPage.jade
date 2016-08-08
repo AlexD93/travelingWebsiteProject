@@ -1,0 +1,46 @@
+doctype html
+block content
+    html
+        body
+            head
+            script(src='/javascripts/scriptSignUpPage.js')
+            link(rel='stylesheet', href='/stylesheets/styleSignUpPage.css')
+            div.form
+                form(action="/SignUpPage" method="post" onsubmit="return validate()")
+                    img(src='/stylesheets/images/ballon.png', alt='ballon', id="logo")
+                        
+                    div.field_signin
+                        span#title Need an account?
+                        br
+                        span#sub_title Sign up to Alsa
+                        br
+                    div.field_signin 
+                        input(type="text" name="Firstname" placeholder='First name*' id="first_name_field")
+                    span#first_name_error
+                    
+                    div.space
+                    
+                    div.field_signin   
+                        input(type="text" name="Lastname" placeholder='Last name*' id="last_name_field")
+                    span#last_name_error
+                    
+                    div.space
+                    
+                    div.field_signin
+                        input(type="text" name="EmailAddress" placeholder='Email address*' id="email_address_field")
+                    
+                    div.space
+                    
+                    div.field_signin 
+                        input(type="text" name="Password" placeholder='Password*' id="password_field")
+                    
+                    div.space
+                    
+                    div.field_signin
+                        input(type="text" name="ReenterPassword" placeholder='Re-enter Password*' id="reenter_password_field")
+                        br
+                        p.required *required fields
+                        input(class="button_signup" type="submit", name="SignUp", value="SignUp")
+                
+                
+                

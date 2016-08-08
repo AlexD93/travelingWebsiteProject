@@ -1,0 +1,117 @@
+body {
+    background-image: url();
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-size:cover;
+    background-color: #f4f4f4;
+}
+
+fieldset { 
+    position: relative;
+    height: auto;
+    min-height: 420px;
+    max-width: 500px;
+    margin-left: 5%;
+    margin-top: 5%;
+    
+}
+
+legend{
+    font-size: 24px;
+    color: #3FB8AF;
+    font-family: 'Sarina', cursive;
+}
+
+
+#logo{
+    height: 92px;
+    width: 92px;
+}
+
+
+#travel{
+    height: 420px;
+    width: 560px;
+    padding-top: 40px;
+}
+
+#button_fieldset{
+    color: white;
+    background-color: #F95A65;
+    border-radius: 10px;
+    border: none;
+    font-size: 22px;
+    padding: 10px 81px;
+    font-weight: bold;
+}
+
+.fieldset{
+    float: left; 
+    width: 33%;
+}
+
+.search_date_add_button{
+    float: left; 
+    width: 33%;
+    padding-top: 10%;
+    padding-left: 10px;
+    
+}
+
+.image{
+    float: left; 
+    width: 33%;
+}
+
+#search_box{
+    font-size:12pt;
+    height: 50px;
+    padding: 8px 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    min-width: 150px;
+    width: 50%;
+    font-size: 14pt;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    box-shadow: 10px 10px 5px grey; 
+}
+
+#datepicker{
+    font-size:12pt;
+    height: 50px;
+    padding: 8px 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    min-width: 150px;
+    width: 50%;
+    font-size: 14pt;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    box-shadow: 10px 10px 5px grey; 
+}
+
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: text-indent 0.5s 0.5s ease; 
+  text-indent: -100%;
+  opacity: 1;
+}
+
+
+#location{
+    font-size: 14pt;
+    color: #3FB8AF;
+    font-family: 'Sarina', cursive;
+}
+
+#button1{
+    color: white;
+    background-color: #F95A65;
+    border-radius: 10px;
+    border: none;
+    font-size: 22px;
+    padding: 10px 27px;
+    font-weight: bold;
+}

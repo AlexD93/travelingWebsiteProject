@@ -1,0 +1,31 @@
+link(rel='stylesheet', href='/stylesheets/styleWishList.css')
+
+html
+  body
+
+    link(rel='stylesheet', href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js')
+    script(src='https://code.jquery.com/ui/1.12.0/jquery-ui.js')
+    script(src='/javascripts/buildWishList.js')
+    script(src='/javascripts/jQueryForDatePicker.js')
+    img(src='/stylesheets/images/ballon.png', alt='ballon', id='logo')
+    br
+
+    div.menu
+        div.fieldset        
+            fieldset
+                legend Your Wish List
+                span(id='location')  
+
+        div.search_date_add_button
+            input(type='text', placeholder='Type place you wish to go', name='search', id="search_box")
+            br
+            br 
+            input(id="datepicker", name='date', placeholder='Pick up your date')
+            br
+            br
+            input(class="add_place" type="submit", name="AddPlace", value="Add Place", id='button_fieldset' onclick="buildList()")
+            br
+            br
+            input(class="button1", id="button1" type='button', value='Hotel Airport Search', onclick="window.location.href='/Search'")

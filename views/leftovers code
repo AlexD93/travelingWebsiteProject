@@ -1,0 +1,49 @@
+LABELS FROM SIGN UP PAGE
+label#firstname_signin First Name </label>
+label#lastname_signin Last Name </label>
+label#emailaddress_signin Email Address </label>
+label#password_signin Password </label>
+label#reenterpassword_signin Re-enter Password </label>
+
+
+
+
+a#text1 ON THE HUNT OF MOMENTS
+
+
+
+
+
+label#emailaddress_login Email Address </label>
+label#password_login Password </label>
+
+
+
+
+h1 Alsa, travel with us &#128527
+
+
+
+
+//- div.buttons
+            //input(class="button1" type='button', value='Sign Up', onclick="window.location.href='/SignUpPage'")
+            //input(class="button2" type='button', value='Sign In', onclick="window.location.href='/LogInPage'")
+            //br
+            //br
+            //input(class="button3" type='button', value='Wish List', onclick="window.location.href='/WishList'")
+
+
+
+
+
+
+
+form(id='searc_form',action="/index" method="POST")
+        input(id='search_bar', type='text', name='search', placeholder='Search...') 
+        
+        
+        
+        
+        
+        
+        p change every where good# to "it works pages" and delete "goods"
